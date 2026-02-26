@@ -1,0 +1,172 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "E-Commerce Web Application: A full-stack online store with product catalog, cart, checkout, user authentication with role-based access (Admin/User), backend APIs for product and order management, and database integration. Includes sample products with prices.",
+  "architectural_notes": [
+    "Full-stack application: frontend product UI + backend REST APIs",
+    "Role-based access control: Admin (product/order management) and User (shopping) roles",
+    "Database: support MySQL, PostgreSQL, or MongoDB"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-build-a-product-catalog-page-that-displays-all-products-in-a-responsive-grid-each-product-card-should-show-the-product-image-name-category-price-and-stock-status-include-search-by-name-and-filter-by-category",
+      "title": "Build a product catalog page that displays all products in a responsive grid. Each product card should show the product image, name, category, price, and stock status. Include search by name and filter by category.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-shopping-cart-with-add-to-cart-quantity-adjustment-and-remove-item-functionality-cart-state-should-persist-in-local-component-react-state-display-a-cart-icon-in-the-header-showing-item-count",
+      "title": "Implement a shopping cart with add-to-cart, quantity adjustment, and remove-item functionality. Cart state should persist in local component/React state. Display a cart icon in the header showing item count.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-checkout-flow-where-authenticated-users-can-review-their-cart-and-place-an-order-on-confirmation-call-the-backend-to-create-an-order-and-clear-the-cart-show-a-success-message-with-the-order-id",
+      "title": "Implement a checkout flow where authenticated users can review their cart and place an order. On confirmation, call the backend to create an order and clear the cart. Show a success message with the order ID.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-order-history-page-for-authenticated-users-showing-all-their-past-orders-each-order-entry-should-display-order-id-date-status-badge-list-of-items-and-total-amount-include-an-order-detail-view",
+      "title": "Build an order history page for authenticated users showing all their past orders. Each order entry should display order ID, date, status badge, list of items, and total amount. Include an order detail view.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-admin-dashboard-accessible-only-to-admin-role-users-the-dashboard-should-include-1-product-management-list-add-edit-and-delete-products-with-a-form-2-order-management-list-all-orders-with-ability-to-update-order-status",
+      "title": "Build an Admin dashboard accessible only to Admin-role users. The dashboard should include: (1) Product management — list, add, edit, and delete products with a form; (2) Order management — list all orders with ability to update order status.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-clean-modern-e-commerce-visual-theme-across-the-entire-application-use-a-warm-neutral-palette-e-g-off-white-backgrounds-dark-charcoal-text-amber-gold-accent-color-use-clear-sans-serif-typography-card-based-layouts-with-subtle-shadows-and-a-sticky-top-navigation-bar-with-the-store-logo-search-cart-icon-and-login-logout-button",
+      "title": "Apply a clean, modern e-commerce visual theme across the entire application. Use a warm neutral palette (e.g., off-white backgrounds, dark charcoal text, amber/gold accent color). Use clear sans-serif typography, card-based layouts with subtle shadows, and a sticky top navigation bar with the store logo, search, cart icon, and login/logout button.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-and-display-a-store-logo-image-and-a-hero-banner-image-for-the-homepage-the-homepage-should-feature-a-hero-section-with-the-banner-a-tagline-and-a-shop-now-cta-button-that-scrolls-to-the-product-catalog",
+      "title": "Generate and display a store logo image and a hero banner image for the homepage. The homepage should feature a hero section with the banner, a tagline, and a 'Shop Now' CTA button that scrolls to the product catalog.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-seedproducts-component-frontend-src-components-seedproducts-tsx-to-include-the-same-expanded-set-of-sample-products-matching-those-added-to-the-backend-so-admins-can-re-seed-the-catalog-if-needed",
+      "title": "Update the SeedProducts component (frontend/src/components/SeedProducts.tsx) to include the same expanded set of sample products matching those added to the backend, so admins can re-seed the catalog if needed.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Product catalog with browse/search functionality",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add to cart and checkout functionality",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "User login and role-based access (Admin/User)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Backend APIs for product and order management",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Database integration (MySQL, PostgreSQL, or MongoDB)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Order tracking functionality",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Add sample products with prices/rates",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Create a backend data model and API for products. Each product should have: id, name, description, category, price (in USD), stock quantity, and image URL. Support CRUD operations (create, read, update, delete) restricted to Admin role.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Pre-populate the backend with at least 10 sample products across multiple categories (e.g., Electronics, Clothing, Home & Kitchen) with realistic names, descriptions, prices, stock quantities, and placeholder image URLs.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Create a backend data model and API for orders. Each order should have: id, userId, list of ordered items (productId, quantity, unitPrice), total amount, status (Pending, Processing, Shipped, Delivered, Cancelled), and creation timestamp. Support placing orders and retrieving order history.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Implement user authentication using Internet Identity with role-based access control. Assign roles of 'Admin' or 'User'. Provide a backend function to assign or look up user roles. The first registered principal can be seeded as Admin.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Add sample products that can be ordered by users (ensure products are available in the catalog for ordering)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Pre-populate the backend with at least 10 diverse sample products across multiple categories (e.g., Electronics, Clothing, Home & Kitchen) with realistic names, descriptions, prices, stock quantities, and placeholder image URLs, so that users can immediately browse and place orders without manual data entry.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "E-Commerce Web Application",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

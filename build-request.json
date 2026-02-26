@@ -1,0 +1,58 @@
+{
+  "kind": "build_request",
+  "title": "Pre-populate sample products for ordering",
+  "projectName": "Shop ICP",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-12",
+      "text": "Pre-populate the backend with at least 10 diverse sample products across multiple categories (e.g., Electronics, Clothing, Home & Kitchen) with realistic names, descriptions, prices, stock quantities, and placeholder image URLs, so that users can immediately browse and place orders without manual data entry.",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Add some product for order"
+        ]
+      },
+      "acceptanceCriteria": [
+        "At least 10 products exist in the backend after initialization.",
+        "Products span at least 3 distinct categories.",
+        "Each product has a non-empty name, description, category, price > 0, stock quantity > 0, and an image URL.",
+        "Products are visible in the product catalog page without any admin action."
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Update the SeedProducts component (frontend/src/components/SeedProducts.tsx) to include the same expanded set of sample products matching those added to the backend, so admins can re-seed the catalog if needed.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Add some product for order"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The Seed Products button in the Admin Dashboard creates at least 10 products across 3+ categories.",
+        "Seeded products appear immediately in the product catalog grid.",
+        "Each seeded product has a valid image URL, price, and stock quantity so it can be added to the cart and ordered."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not alter existing order, cart, or authentication logic.",
+    "Sample product image URLs must be publicly accessible placeholder/stock URLs."
+  ],
+  "nonGoals": [
+    "Adding new product fields beyond the existing schema (id, name, description, category, price, stock, imageUrl).",
+    "Implementing a product import/export feature.",
+    "Changing the Admin dashboard layout or order management functionality."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

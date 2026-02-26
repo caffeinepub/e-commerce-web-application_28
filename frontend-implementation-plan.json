@@ -1,0 +1,23 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Pre-populate sample products for ordering",
+  "requirements": [
+    {
+      "id": "REQ-13",
+      "summary": "Expand the SeedProducts component to create at least 10 diverse sample products across multiple categories (Electronics, Clothing, Home & Kitchen) with realistic data so admins can populate the catalog for immediate user browsing and ordering",
+      "acceptanceCriteria": [
+        "The Seed Products button in the Admin Dashboard creates at least 10 products across 3+ categories.",
+        "Seeded products appear immediately in the product catalog grid.",
+        "Each seeded product has a valid image URL, price, and stock quantity so it can be added to the cart and ordered."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/SeedProducts.tsx",
+          "operation": "modify",
+          "description": "Expand the sample product array to include at least 10 diverse products spanning Electronics, Clothing, and Home & Kitchen categories. Each product must include realistic name, description, category (using the Category enum), price > 0, stock quantity > 0, and a publicly accessible placeholder image URL. Ensure the product creation logic iterates through all products and uses the useCreateProduct mutation for each. Add user feedback showing progress or completion status when seeding multiple products."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "frontend/src/index.css": "Global styles with warm neutral + amber/gold OKLCH color palette, Google Fonts import for Inter (body) and Playfair Display (headings), and card shadow utilities.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with custom fontFamily (Inter/Playfair Display), warm neutral color tokens, card shadow utilities, and success/warning color tokens.",
+  "frontend/src/context/CartContext.tsx": "React Context providing local cart state management with addToCart, removeFromCart, updateQuantity, clearCart, getItemCount, and getTotal functions.",
+  "frontend/src/hooks/useQueries.ts": "All React Query hooks for backend operations — products (list/create/update/delete), orders (place/history/all/updateStatus), and user profile/admin checks. Product mutations now pass a plain `{ url, name, mimeType }` image object instead of `ExternalBlob`, matching the backend interface.",
+  "frontend/src/components/Layout.tsx": "Sticky navigation header with store logo, cart icon with badge, auth button, mobile menu, and footer with attribution link; wraps all page content.",
+  "frontend/src/components/CartDrawer.tsx": "Slide-out Sheet drawer showing cart items with quantity controls, remove buttons, subtotal/total, and checkout navigation button.",
+  "frontend/src/components/ProductCard.tsx": "Product card with image, category badge, name, description, price, stock status, and animated Add to Cart button. Uses `product.image.url` (plain string) instead of `getDirectURL()` to match the backend interface.",
+  "frontend/src/components/OrderCard.tsx": "Collapsible order card showing order ID, date, color-coded status badge, item count, total, and expandable item details list.",
+  "frontend/src/components/ProfileSetupModal.tsx": "Modal dialog for first-time login users to enter their name and save their profile via the backend.",
+  "frontend/src/components/AdminGuard.tsx": "Route guard component that checks admin status and shows access denied screen for non-admin or unauthenticated users.",
+  "frontend/src/components/AddProductForm.tsx": "Dialog form for creating or editing products with fields for name, description, category, price, stock, and image URL with preview. Uses `editProduct.image.url` (plain string) instead of `getDirectURL()` to match the backend interface.",
+  "frontend/src/components/ProductManagementTable.tsx": "Admin table listing all products with edit/delete actions, add product button, and delete confirmation dialog. Uses `product.image.url` (plain string) instead of `getDirectURL()` to match the backend interface.",
+  "frontend/src/components/OrderManagementTable.tsx": "Admin table listing all orders with inline status dropdown for updating order status.",
+  "frontend/src/components/SeedProducts.tsx": "Admin utility component that seeds 13 sample products across Electronics (5), Clothing (4), and Home & Kitchen (4) categories with realistic names, prices, stock quantities, and Unsplash image URLs. Includes a progress bar, per-product counter, and a completion state with a success message.",
+  "frontend/src/pages/Home.tsx": "Homepage with hero banner, features bar, featured products grid, and CTA section linking to the catalog.",
+  "frontend/src/pages/ProductCatalog.tsx": "Full product catalog page with real-time search, category filter buttons, and responsive 2-4 column product grid.",
+  "frontend/src/pages/Checkout.tsx": "Checkout page showing order summary, login gate for unauthenticated users, and confirm order button that syncs cart to backend and places order.",
+  "frontend/src/pages/OrderSuccess.tsx": "Order success confirmation page showing order ID, next steps, and navigation to orders/catalog.",
+  "frontend/src/pages/OrderHistory.tsx": "Authenticated user's order history page with sorted orders displayed as expandable OrderCard components.",
+  "frontend/src/pages/AdminDashboard.tsx": "Admin-only dashboard with tabbed interface for product management and order management, plus seed products banner when store is empty.",
+  "frontend/src/App.tsx": "Main app with TanStack Router setup, all routes defined, CartProvider and ProfileSetupModal wired into the root layout."
+}

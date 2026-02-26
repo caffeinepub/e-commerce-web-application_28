@@ -1,0 +1,55 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-26T04:38:33.059Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-12",
+        "summary": "Pre-populate the backend with at least 10 diverse sample products across multiple categories (e.g., Electronics, Clothing, Home & Kitchen) with realistic names, descriptions, prices, stock quantities, and placeholder image URLs, so that users can immediately browse and place orders without manual data entry.",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-13",
+        "summary": "Update the SeedProducts component (frontend/src/components/SeedProducts.tsx) to include the same expanded set of sample products matching those added to the backend, so admins can re-seed the catalog if needed.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/SeedProducts.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/SeedProducts.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "backend/migration.mo",
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/AddProductForm.tsx",
+    "frontend/src/components/ProductCard.tsx",
+    "frontend/src/components/ProductManagementTable.tsx",
+    "frontend/src/components/SeedProducts.tsx",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/hooks/useQueries.ts",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}
